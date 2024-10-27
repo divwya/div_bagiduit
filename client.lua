@@ -59,13 +59,3 @@ elseif target == 'qbcore' then
         distance = 1.0,
     })
 end
-
-AddEventHandler('onResourceStop', function(resource)
-    if resource == GetCurrentResourceName() then
-        if target == 'ox' then
-            exports.ox_target:removeGlobalPlayer('target_bagiduit')
-        elseif target == 'qbcore' then
-            exports['qb-target']:RemoveGlobalPed('Give money')
-        end
-    end
-end)
