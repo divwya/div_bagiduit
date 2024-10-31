@@ -1,6 +1,6 @@
 local QBCore = exports["qb-core"]:GetCoreObject()
 
-local target = 'ox' --  qbcore
+local target = 'ox' --  qb
 
 if target == 'ox' then
     exports.ox_target:addGlobalPlayer({
@@ -28,7 +28,7 @@ if target == 'ox' then
             end
         end,
     })
-elseif target == 'qbcore' then
+elseif target == 'qb' then
     exports['qb-target']:AddGlobalPed({
             options = {
                 {
