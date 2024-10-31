@@ -35,7 +35,7 @@ elseif target == 'qbcore' then
                     label = 'Give Money',
                     icon = 'fas fa-user',
                     action = function(entity)
-                        local net = NetworkGetPlayerIndexFromPed(data.entity)
+                        local net = NetworkGetPlayerIndexFromPed(entity)
                         local id = GetPlayerServerId(net)
                         local input = lib.inputDialog('Give money', {
                             {
