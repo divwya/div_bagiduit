@@ -7,6 +7,5 @@ client_script 'client.lua'
 server_script 'server.lua'
 dependencies {
     'qb-core',
-    'ox_lib',
-    'ox_target',
+    'ox_lib'
 }
