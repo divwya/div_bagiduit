@@ -8,7 +8,6 @@ lib.callback.register('div:bagiduit:target', function(source, tId, amount)
         Player.Functions.RemoveMoney('cash', amount)
         target.Functions.AddMoney('cash', amount)
         return true
-    else
-        return false
     end
+    return false
 end)
