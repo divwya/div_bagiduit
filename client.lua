@@ -1,8 +1,7 @@
 local QBCore = exports["qb-core"]:GetCoreObject()
+local cfg = require 'config'
 
-local target = 'ox' --  qb
-
-if target == 'ox' then
+if cfg.target == 'ox_target' then
     exports.ox_target:addGlobalPlayer({
         label = 'Give Money',
         name = 'target_bagiduit',
@@ -28,7 +27,7 @@ if target == 'ox' then
             end
         end,
     })
-elseif target == 'qb' then
+elseif cfg.target == 'qb_target' then
     exports['qb-target']:AddGlobalPed({
             options = {
                 {
