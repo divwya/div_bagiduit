@@ -27,7 +27,7 @@ if cfg.target == 'ox_target' then
             end
         end,
     })
-elseif cfg.target == 'qb_target' then
+elseif cfg.target == 'qb-target' then
     exports['qb-target']:AddGlobalPed({
             options = {
                 {
