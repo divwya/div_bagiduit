@@ -28,7 +28,7 @@ if cfg.target == 'ox_target' then
         end,
     })
 elseif cfg.target == 'qb-target' then
-    exports['qb-target']:AddGlobalPed({
+    exports['qb-target']:AddGlobalPlayer({
             options = {
                 {
                     label = 'Give Money',
